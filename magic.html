@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Potter</title>
+  <!-- Bootstrap Link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Font awesome icon -->
+  <script script src="https://kit.fontawesome.com/f82a23e05b.js" crossorigin="anonymous"></script>
+  <!-- Link w css -->
+  <link rel="stylesheet" href="harrypotter.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-n1">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-3 " href="#"><img width="90" height="30"
+            src="./photos/photos/hplogo.PNG" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active " aria-current="page" href="./index.html"><i class="fa-solid fa-hat-wizard"><span
+                    class="navtext">&nbsp; Home</span></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./magic.html"><i class="fa-solid fa-wand-sparkles"><span
+                    class="navtext">&nbsp; Magic</span></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="navtext"><i class="fa-solid fa-wand-magic">&nbsp; More</i></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./wizardwitch.html"><i class="fa-solid fa-broom-ball">&nbsp; Wizard & Witches</i></a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="./patronus.html"><i class="fa-solid fa-dragon">&nbsp; Patronus</i></a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+                  <!-- Live modal -->
+              <!-- Button trigger modal -->
+              <button type="button" class="btn button-signup" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Become One
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header p-3 pb-2 border-bottom-0">
+                      <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+                      <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body p-5 pt-0">
+                      <form class="">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control rounded-3" id="floatingInput"
+                            placeholder="name@example.com">
+                          <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="password" class="form-control rounded-3" id="floatingPassword"
+                            placeholder="Password">
+                          <label for="floatingPassword">Password</label>
+                        </div>
+                        <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                        <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                        <hr class="my-4">
+                        <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                          <svg class="bi me-1" width="16" height="16">
+                            <use xlink:href="#twitter"></use>
+                          </svg>
+                          Sign up with Twitter
+                        </button>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                          <svg class="bi me-1" width="16" height="16">
+                            <use xlink:href="#facebook"></use>
+                          </svg>
+                          Sign up with Facebook
+                        </button>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                          <svg class="bi me-1" width="16" height="16">
+                            <use xlink:href="#github"></use>
+                          </svg>
+                          Sign up with GitHub
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div> -->
+              </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Title -->
+    <section>
+      <div class="row mb-4">
+        <div class="col-lg- mx-auto text-center">
+          <h2 class="main-heading" class="fs-1">DISCOVER MORE</h2>
+          <p class="main-sub-heading" class="mb-0">Basic knowlegable factors that could emphasize more of your
+            comprehension to Hogwarts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="magicbanner">
+      </div>
+    </section>
+
+    <section>
+      <!-- Tabs content START -->
+      <div class="tab-content" id="course-pills-tabContent">
+        <!-- Content START -->
+        <div class="tab-pane fade show active" id="course-pills-tabs-1" role="tabpanel"
+          aria-labelledby="course-pills-tab-1">
+          <!-- Content START -->
+          <div class="row g-4">
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <div class="card shadow h-100">
+                <div class="card" style="max-width: 100%; max-height: 100%;">
+                  <div class="row g-0">
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title text-end"><b>Salazar Slytherin</b></h5>
+                        <p class="card-text text-end">Slytherins tended to be ambitious, shrewd, cunning, strong
+                          leaders, and achievement-oriented. They also had highly developed senses of self-preservation.
+                          This
+                          means that Slytherins tended to hesitate before acting, so all possible outcomes
+                          before deciding exactly what should be done.
+                          <br>
+                          <br>
+                          Slytherin had a well-known reputation for creating Dark witches and wizards that many would
+                          even say that every Dark witch or wizard was actually in Slytherin (it also didn't help that
+                          Voldemort himself was in Slytherin too when he was a student at Hogwarts).
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./photos/slytherin/slyhterincard.JPG" class="img-fluid rounded-start" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <div class="card shadow h-100">
+                <div class="card" style="max-width: 100%; max-height: 100%;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./photos/gryffindor/gryffindorcard.JPG" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Godric Gryffindor</b></h5>
+                        <p class="card-text">The Gryffindor house emphasised the traits of courage as well as "daring,
+                          nerve, and chivalry", and thus its
+                          members were generally regarded as brave, though sometimes reckless. Some Gryffindors had also
+                          been
+                          noted to be short-tempered.
+                          <br>
+                          <br>
+                          Gryffindors and Slytherins had shared a fierce house rivalry since their founders. There might
+                          an
+                          element of feeling wronged, as Harry and his fellow Gryffindors tended to win in a lot of
+                          circumstances which, when
+                          viewed from a neutral point of view, may be considered unfair.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card item END -->
+
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <div class="card shadow h-100">
+                <div class="card" style="max-width: 100%; max-height: 100%;">
+                  <div class="row g-0">
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title text-end"><b>Rowena Ravenclaw</b></h5>
+                        <p class="card-text text-end">Ravenclaw House prized learning, wisdom, wit, and intellect in its
+                          members.[6] Thus, many Ravenclaws tended to be
+                          academically motivated and talented students. They also prided themselves on being original in
+                          their ideas, and methods.
+                          It was not unusual to find Ravenclaw students practising especially different types of magic
+                          that other houses might
+                          shun.
+                          <br>
+                          <br>
+                          Ravenclaws were so competitive when it came to academic success that they were known to
+                          backstab each other, and likely
+                          other students, in order to get top marks.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./photos/ravenclaw/ravenclawcard.JPG" class="img-fluid rounded-start" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card item END -->
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <div class="card shadow h-100">
+                <div class="card" style="max-width: 100%; max-height: 100%;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./photos/hufflepuff/hufflepuffcard.JPG" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Helga Hufflepuff</b></h5>
+                        <p class="card-text">Students were known to be hard-working, friendly, loyal, honest and rather
+                          impartial. Hufflepuffs were not as competitive as the other houses, and were more modest about
+                          their
+                          accomplishments. Hufflepuff was the most inclusive among the four houses; valuing hard work,
+                          dedication, patience,
+                          loyalty, and fair play rather than a particular aptitude in its students.
+                          <br>
+                          <br>
+                          Due to Helga Hufflepuff's policy is often thought to be the house of less talented
+                          wizards and witches. However, this was merely a misunderstanding of the Sorting Hat's poem.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card item END -->
+
+          </div>
+          <!-- Content END -->
+          <!-- Tabs content END -->
+        </div>
+    </section>
+
+    <section class="imgandtext01">
+      <article class="imgandtextv201">
+        <div class="imgandtextsub01">
+          <h1 id="texth101">Spell Book</h1>
+          <p id="textp01"> 
+            A spell was a controlled manifestation of magic that affected <br>
+            the world in a supernatural fashion, suchas levitating objects, <br>
+            conjuring fire or water, or stunning an individual. Generally <br> 
+            cast by a witch or a wizard, spells were often produced with an <br>
+            incantation, or for more experienced witches and wizards mentally, <br>
+            and could appear as jets of light. Because of this, spells could <br>
+            often miss, be dodged, or blocked, either with an object or another spell. <br>
+            The action of performing a spell is referred to as casting or spellwork. <br><br>
+
+            Normally, spells required four main factors to be properly accounted <br>
+             for in order to succeed: wand movement, incantation, concentration and <br>
+              intention. Although casting some spells were a matter of caster's will, <br>
+               while for others, it was a question of intent, it was invariably the <br>
+                case that if one did not move their wand in the correct way, did not <br>
+                 speak the incantation properly and/or could not retain their concentration <br>
+                  and/or desired outcome in their imagination during casting, then the spell <br>
+                   would fail or backfire. In addition, the quality and duration of spells <br>
+                    depended entirely on the amount of spell energy they were capable of <br>
+                     generating for it, as well as their level of success at transferring and <br>
+                      distributing it, which could be improved with practice or decline with neglect.
+            <br>
+            <br>
+            "There was a lot more to magic, as Harry quickly found out, than waving your wand
+            <br> and saying a few funny words."
+            <br>
+            — Harry Potter learning that magic is not as easy as he thought
+
+          </p>
+        </div>
+        <div id="imgrightside01">
+          <img src="./photos/photos/spellbook.JPEG" alt="lips">
+        </div>
+      </article>
+    </section>
+
+    <section class="imgandtext02">
+      <article class="imgandtextv202">
+        <div id="imgrightside02">
+          <img src="./photos/photos/wands.JPEG" alt="lips">
+        </div>
+        <div class="imgandtextsub02">
+          <h1 id="texth202"> The Wands</h1>
+          <p id="textp02"> 
+            A wand was a quasi-sentient magical instrument through which a witch <br>
+             or wizard channelled their magical powers to centralise the effects <br>
+              for more complex results.[3] Most spells were cast with the aid of wands,
+               <br> but spells could be cast without the use of wands. Although <br>
+                wandless magic was more common in other countries, such as some in <br>
+                 Africa, European wizards were generally used to using the tool and <br>
+                  found wandless magic more difficult, requiring much more concentration <br>
+                   and skill to perform these spells.
+                   <br>
+                   <br>
+
+              Magic with a wand was usually performed with an incantation, but more <br>
+               experienced wizards could cast nonverbal spells, which concealed the spell <br>
+                until cast and might thereby prevent an opponent from adequately protecting <br>
+                 him- or herself in time. Wands were referred to as "quasi-sentient" because <br>
+                  their being imbued with a great deal of magic made them as animate as an <br>
+                   inanimate object could be.
+                    <br>
+                    <br>
+
+              Every single wand was unique and would depend for its character on the particular <br>
+               tree and magical creature from which it derived its materials. Moreover, each wand, <br>
+                from the moment it found its ideal owner, would begin to learn from and teach its <br>
+                 human partner.
+          </p>
+        </div>
+      </article>
+    </section>
+    </div>
+  </main>
+  
+<!-- footer -->
+<footer class="py-3 my-4">
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item "><a href="./index.html" class="nav-link px-2 footer-text">Home</a></li>
+    <li class="nav-item"><a href="./magic.html" class="nav-link px-2 footer-text">Magic</a></li>
+    <li class="nav-item"><a href="./wizardwitch.html" class="nav-link px-2 footer-text ">WnW</a></li>
+    <li class="nav-item"><a href="./patronus.html" class="nav-link px-2 footer-text">Patronus</a></li>
+  </ul>
+  <p class="text-center footer-text">© 2023 Harry Potter, Inc</p>
+</footer>
+  
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

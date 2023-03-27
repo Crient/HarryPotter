@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter</title>
+         <!-- Bootstrap Link-->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+         <!-- Font awesome icon -->
+         <script src="https://kit.fontawesome.com/f82a23e05b.js" crossorigin="anonymous"></script>
+         <!-- Link w css -->
+         <link rel="stylesheet" href="harrypotter.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mt-n1">
+          <div class="container-fluid">
+            <a class="navbar-brand ms-3 " href="#"><img width="90" height="30"
+                src="./photos/photos/hplogo.PNG" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active " aria-current="page" href="./index.html"><i class="fa-solid fa-hat-wizard"><span
+                            class="navtext">&nbsp; Home</span></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="./magic.html"><i class="fa-solid fa-wand-sparkles"><span
+                            class="navtext">&nbsp; Magic</span></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="navtext"><i class="fa-solid fa-wand-magic">&nbsp; More</i></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./wizardwitch.html"><i class="fa-solid fa-broom-ball">&nbsp; Wizard & Witches</i></a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="./patronus.html"><i class="fa-solid fa-dragon">&nbsp; Patronus</i></a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+        
+                  </ul>
+              <form class="d-flex" role="search">
+                      <!-- Live modal -->
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn button-signup" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Become One
+                  </button>
+    
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content rounded-4 shadow">
+                        <div class="modal-header p-3 pb-2 border-bottom-0">
+                          <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+                          <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+    
+                        <div class="modal-body p-5 pt-0">
+                          <form class="">
+                            <div class="form-floating mb-3">
+                              <input type="email" class="form-control rounded-3" id="floatingInput"
+                                placeholder="name@example.com">
+                              <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                              <input type="password" class="form-control rounded-3" id="floatingPassword"
+                                placeholder="Password">
+                              <label for="floatingPassword">Password</label>
+                            </div>
+                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                            <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                            <hr class="my-4">
+                            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                            <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                              <svg class="bi me-1" width="16" height="16">
+                                <use xlink:href="#twitter"></use>
+                              </svg>
+                              Sign up with Twitter
+                            </button>
+                            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                              <svg class="bi me-1" width="16" height="16">
+                                <use xlink:href="#facebook"></use>
+                              </svg>
+                              Sign up with Facebook
+                            </button>
+                            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                              <svg class="bi me-1" width="16" height="16">
+                                <use xlink:href="#github"></use>
+                              </svg>
+                              Sign up with GitHub
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div> -->
+                  </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+            <!-- loop & autoplay video -->
+        <video class="patronusvideo" autoplay muted loop>
+            <source src="./photos/patronusvideo.MOV" type="video/mp4">
+            <source src="./photos/patronusvideo.MOV" type="video/ogg">
+            
+          </video>
+        </section>
+
+        <section>
+            <div>
+                <div class="row mb-4">
+                    <div class="col-lg-8 mx-auto text-center">
+                      <h2 class="main-heading-patronus" class="fs-1 main-heading">Patronus world<br>
+                    </div>
+                  </div>
+                <div >
+                    <img class="bluetrail" src="./photos/photos/bluetrail.PNG" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="imgandtext03">
+          <article class="imgandtextv203">
+            <div id="imgrightside03">
+              <img src="./photos/photos/wandcastingspell.PNG" alt="hats">
+            </div>
+            <div class="imgandtextsub03">
+              <h1 id="texth203"> What's Patronus?</h1>
+              <p id="textp03"> 
+                
+                <br>
+                The Patronus Charm (Expecto Patronum) was the most famous and nr one of the <br>
+                     most powerful defensive charms known to wizardkind.[4] It was an immensely <br>
+                      complicated and extremely difficult spell that channelled the caster's <br>
+                       positive emotions into a powerful protection and evoked a partially-tangible <br>
+                        positive energy force known as a Patronus (pl. Patronuses)or spirit guardian. <br>
+                         It was the primary protection against Dementors and Lethifolds, against which <br>
+                          there were no other defences.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section>
+            <div>
+                <img id="patronuslist" src="./photos/photos/patronuslist.jpg" alt="list">
+              </div>
+        </section>
+        <section>
+            <!-- Content START -->
+            <div class="row g-4">
+              <!-- Card item START -->
+              <div class="col-sm-12 col-lg-6 col-xl-6">
+                <div class="card-patronus shadow h-100">
+                    <div class="card-patronus">
+                      <img src="./photos/photos/cardpatronus.PNG" class="card-img" alt="...">
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-lg-6 col-xl-6">
+                  <div class="card-patronus-text shadow h-100">
+                    <div class="card-patronus-text" style="max-width: 100%; max-height: 100%;">
+                      <div class="row g-0">
+                        <div class="col-sm-12 col-lg-6 col-xl-6">
+                          <div class="card-body">
+                            <h5 class="card-title"><b>What's your Patronus?</b></h5>
+                            <p class="card-text">Click here to find out!</p>
+                            <a href="https://www.wikihow.com/Patronus-Quiz"><button type="button" class="btn btn-outline-light">Here</button></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+            </div>
+          <!-- Content END -->
+        </section>
+
+
+      </main>
+
+
+<!-- footer -->
+<footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item "><a href="./index.html" class="nav-link px-2 footer-text">Home</a></li>
+      <li class="nav-item"><a href="./magic.html" class="nav-link px-2 footer-text">Magic</a></li>
+      <li class="nav-item"><a href="./wizardwitch.html" class="nav-link px-2 footer-text ">WnW</a></li>
+      <li class="nav-item"><a href="./patronus.html" class="nav-link px-2 footer-text">Patronus</a></li>
+    </ul>
+    <p class="text-center footer-text">© 2023 Harry Potter, Inc</p>
+  </footer>
+    
+
+      <!-- Bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,393 @@
+body{
+    background-image: url(./photos/photos/websitebgc.JPG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+@font-face {
+    font-family: "round-bold";
+    src: url(./fonts/bold.otf);
+}
+@font-face {
+    font-family: "round-bold-italic";
+    src: url(./fonts/bold\ italic.otf);
+}
+@font-face{
+    font-family: "wizardy";
+    src: url(./fonts/WIZARDRY.TTF);
+}
+@font-face{
+    font-family: "rubikregular";
+    src: url(./fonts/Rubik-Regular.ttf);
+}
+
+
+.container-fluid{
+    background-color: #000328;
+    margin-bottom: -10px;
+    margin-top: 10px;
+    padding: 5px;
+}
+.container-fluid a, .container-fluid i, .container-flui span{
+   color: white;
+   text-shadow: grey;
+   padding-right: 10px;
+}
+.navtext{
+    font-size: 10px;
+}
+
+/* img NEGATIVE MARGIN adjustment */
+.navbar  {
+    margin-top: -1.25rem !important;
+  }
+
+.dropdown-menu{
+    background-color: #000328;
+    font-size: 10px;
+}
+   
+.carousel-inner{
+    background-size: cover;
+}
+.button-signup{
+    background-color:  #00008B;
+    color: white;
+    font-size: 13px;
+    margin-right: 10px;
+    padding: -10px;
+    border-color: #00008B;
+    font-family: "round-bold";
+}
+.form-control-search{
+    font-size: 10px;
+
+}
+.tab-content p{
+    font-size: 12px;
+}
+
+.main-heading{
+    color: white;
+    margin-top: 25px;
+    font-family: "wizardy";
+}
+.main-sub-heading{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+/* Slytherin */
+.slytherin-button{
+    background-color:  #000112;
+    color: #50C878;
+    font-size: 20px;
+    margin-top: 15px;
+    border-color:  #000112;
+    border-radius: 10px;
+}
+
+/* Gryffindor */
+.gryffindor-button{
+    background-color:   #000112;
+    color: #E0115F;
+    font-size: 20px;
+    margin-top: 15px;
+    border-color:  #000112;
+    border-radius: 10px;
+}
+
+.ravenclaw-button{
+    background-color:   #000112;
+    color: #87CEEB;
+    font-size: 20px;
+    margin-top: 15px;
+    border-color:  #000112;
+    border-radius: 10px;
+}
+.hufflepuff-button{
+    background-color:   #000112;
+    color: #EEDC82;
+    font-size: 20px;
+    margin-top: 15px;
+    border-color:  #000112;
+    border-radius: 10px;
+}
+
+.card{
+    border-color: black;
+    background-color: #000328;
+    color: white;
+}
+.button-view{
+    width: 100px;
+    height: 50px;
+    font-size: 10px;
+}
+
+.footer-text{
+    color: white;
+}
+
+.card-body h5{
+    font-family: "round-bold";
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.card p{
+    font-family: "rubikregular";
+    font-size: 15px;
+    padding: 10px;
+}
+
+.imgandtextv201{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.imgandtextsub01{
+    margin-left: 100px;
+
+}
+#texth101{
+    text-align: center;
+    margin-left: -100px;
+    font-variant: small-caps;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: "wizardy";
+    color: white;
+}
+#textp01{
+    text-align: center;
+    margin-left: -100px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    font-family: "rubikregular";
+}
+
+.imgandtextv201{
+    display: flex;
+    justify-content: space-evenly;
+    right: 20;
+    left: 20;
+}
+#imgandtextleftsidev201{
+    margin-left: 200px;
+}
+#imgrightside01 img{
+    width: 480px;
+    height: 625px;
+    border-radius: 15px;
+}
+
+.imgandtextv202{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.imgandtextsub02{
+    margin-left: 100px;
+
+}
+#texth202{
+    text-align: center;
+    margin-left: -100px;
+    font-variant: small-caps;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: "wizardy";
+    color: white;
+    margin-top: 20px;
+}
+#textp02{
+    text-align: center;
+    margin-left: -100px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    font-family: "rubikregular";
+}
+
+.imgandtextv202{
+    display: flex;
+    justify-content: space-evenly;
+    right: 20;
+    left: 20;
+}
+#imgandtextleftsidev202{
+    margin-left: 200px;
+}
+#imgrightside02 img{
+    width: 480px;
+    height: 625px;
+    border-radius: 15px;
+}
+
+/* index */
+.main-heading{
+    color: white;
+    margin-top: 25px;
+    font-family: "wizardy";
+    font-size: 30px;
+    padding: 3px;
+}
+.main-headingsub{
+    color: white;
+    margin-top: 25px;
+    font-family: "wizardy";
+    font-size: 22px;
+    padding: 3px;
+}
+
+.imgandtextv203{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.imgandtextsub03{
+    margin-left: 100px;
+
+}
+#texth203{
+    text-align: center;
+    margin-left: -100px;
+    font-variant: small-caps;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: "wizardy";
+    color: white;
+    margin-top: 40px;
+}
+#textp03{
+    text-align: center;
+    margin-left: -100px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    font-family: "rubikregular";
+}
+.textp03sub{
+    font-size: 20px;
+}
+.imgandtextv203{
+    display: flex;
+    justify-content: space-evenly;
+    right: 20;
+    left: 20;
+}
+#imgandtextleftsidev203{
+    margin-left: 200px;
+}
+#imgrightside03 img{
+    width: 480px;
+    height: 600px;
+    border-radius: 15px;
+    margin-top: -50px;
+}
+.card-horcruxes{
+    background-color: rgba(255, 255, 255, 0);
+}
+.section-horcruxes{
+    margin-top: 20px;
+}
+.card-img-overlay p{
+    color: green;
+}
+
+/* patronus */
+.patronusvideo{
+    /* position: fixed; */
+    /* right: 0; */
+    /* bottom: 0; */
+    max-width: 100%;
+    height: auto;
+}
+.bluetrail{
+    width: 1450px;
+    height: 100px;
+    position: relative;
+    right: 0;
+    top: -90px;
+    z-index:-1;
+}
+
+.main-heading-patronus{
+    text-shadow: 0 0 3px white;
+    color: white;
+    margin-top: 25px;
+    font-family: "wizardy";
+    font-size: 30px;
+    padding: 3px;
+}
+
+.imgandtextv204{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.imgandtextsub04{
+    margin-left: 100px;
+
+}
+#texth204{
+    text-align: center;
+    margin-left: -100px;
+    font-variant: small-caps;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: "wizardy";
+    color: white;
+    margin-top: 40px;
+}
+#textp04{
+    text-align: center;
+    margin-left: -100px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    font-family: "rubikregular";
+}
+.textp04sub{
+    font-size: 20px;
+}
+.imgandtextv204{
+    display: flex;
+    justify-content: space-evenly;
+    right: 20;
+    left: 20;
+}
+#imgandtextleftsidev204{
+    margin-left: 200px;
+}
+#imgrightside04 img{
+    width: 600px;
+    height: 600px;
+    border-radius: 15px;
+    margin-top: -50px;
+}
+.entirepatronuscard{
+    margin-top: 100px;
+}
+#patronuslist{
+    width: 500px;
+    height: 800px;
+    border-radius: 10px;
+    margin-top: -50px;
+    display: block;
+    margin: auto;
+}
+
+.card-patronus-text{
+    background-color: #ffffff00;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}

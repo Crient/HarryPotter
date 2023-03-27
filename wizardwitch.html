@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter</title>
+      <!-- Bootstrap Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font awesome icon -->
+    <script src="https://kit.fontawesome.com/f82a23e05b.js" crossorigin="anonymous"></script>
+    <!-- Link w css -->
+    <link rel="stylesheet" href="harrypotter.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mt-n1">
+          <div class="container-fluid">
+            <a class="navbar-brand ms-3 " href="#"><img width="90" height="30"
+                src="./photos/photos/hplogo.PNG" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active " aria-current="page" href="./index.html"><i class="fa-solid fa-hat-wizard"><span
+                        class="navtext">&nbsp; Home</span></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./magic.html"><i class="fa-solid fa-wand-sparkles"><span
+                        class="navtext">&nbsp; Magic</span></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <span class="navtext"><i class="fa-solid fa-wand-magic">&nbsp; More</i></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./wizardwitch.html"><i class="fa-solid fa-broom-ball">&nbsp; Wizard & Witches</i></a></li>
+                    <hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="./patronus.html"><i class="fa-solid fa-dragon">&nbsp; Patronus</i></a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                </li>
+    
+              </ul>
+              <form class="d-flex" role="search">
+                      <!-- Live modal -->
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn button-signup" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Become One
+                  </button>
+    
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content rounded-4 shadow">
+                        <div class="modal-header p-3 pb-2 border-bottom-0">
+                          <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+                          <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+    
+                        <div class="modal-body p-5 pt-0">
+                          <form class="">
+                            <div class="form-floating mb-3">
+                              <input type="email" class="form-control rounded-3" id="floatingInput"
+                                placeholder="name@example.com">
+                              <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                              <input type="password" class="form-control rounded-3" id="floatingPassword"
+                                placeholder="Password">
+                              <label for="floatingPassword">Password</label>
+                            </div>
+                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                            <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                            <hr class="my-4">
+                            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                            <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                              <svg class="bi me-1" width="16" height="16">
+                                <use xlink:href="#twitter"></use>
+                              </svg>
+                              Sign up with Twitter
+                            </button>
+                            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                              <svg class="bi me-1" width="16" height="16">
+                                <use xlink:href="#facebook"></use>
+                              </svg>
+                              Sign up with Facebook
+                            </button>
+                            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                              <svg class="bi me-1" width="16" height="16">
+                                <use xlink:href="#github"></use>
+                              </svg>
+                              Sign up with GitHub
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div> -->
+                  </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+  <!-- =====CARDS SECTION===== -->
+  <section>
+    <div class="container">
+      <!-- Title -->
+      <div class="row mb-4">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="main-heading" class="fs-1 main-heading">Hogwarts Houses</h2>
+          <p class="main-sub-heading"class="mb-0">Amongst the finest wizard in each houses of the Wizard and Witchery Hogwarts</p>
+        </div>
+      </div>
+
+
+      <!-- Tabs START -->
+      <ul class="nav  justify-content-center mb-4 px-3 tab-bar" id="course-pills-tab"
+        role="tablist">
+        <!-- Tab item -->
+        <li class="nav-item me-2 me-sm-5" role="presentation">
+          <button class="mb-2 mb-md-0 active slytherin-button" id="course-pills-tab-1" data-bs-toggle="pill"
+            data-bs-target="#course-pills-tabs-1" type="button" role="tab" aria-controls="course-pills-tabs-1"
+            aria-selected="true">Salazar Slytherin</button>
+        </li>
+        <!-- Tab item -->
+        <li class="nav-item me-2 me-sm-5" role="presentation">
+          <button class="mb-2 mb-md-0 gryffindor-button" id="course-pills-tab-2" data-bs-toggle="pill"
+            data-bs-target="#course-pills-tabs-2" type="button" role="tab" aria-controls="course-pills-tabs-2"
+            aria-selected="false" tabindex="-1">Godric Gryffindor</button>
+        </li>
+        <!-- Tab item -->
+        <li class="nav-item me-2 me-sm-5" role="presentation">
+          <button class="mb-2 mb-md-0 ravenclaw-button" id="course-pills-tab-3" data-bs-toggle="pill"
+            data-bs-target="#course-pills-tabs-3" type="button" role="tab" aria-controls="course-pills-tabs-3"
+            aria-selected="false" tabindex="-1">Rowena Ravenclaw</button>
+        </li>
+        <!-- Tab item -->
+        <li class="nav-item me-2 me-sm-5" role="presentation">
+          <button class="mb-2 mb-md-0 hufflepuff-button" id="course-pills-tab-4" data-bs-toggle="pill"
+            data-bs-target="#course-pills-tabs-4" type="button" role="tab" aria-controls="course-pills-tabs-4"
+            aria-selected="false" tabindex="-1">Helga Hufflepuff</button>
+        </li>
+      </ul>
+      <!-- Tabs END -->
+      
+
+      <!-- Tabs content START -->
+      <div class="tab-content" id="course-pills-tabContent">
+        <!-- Content START -->
+        <div class="tab-pane fade show active" id="course-pills-tabs-1" role="tabpanel"
+          aria-labelledby="course-pills-tab-1">
+          <div class="row g-4">
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+             <a style="text-decoration: none;" href="#">
+              <div class="card shadow h-100">
+                <div class="card" style="max-width: 100%; max-height: 100%;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./photos/slytherin/voldermort.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Tom Riddle</b></h5>
+                        <p class="card-text">Personality. Rowling described Voldemort as "the most evil wizard for
+                          hundreds and hundreds of years". She elaborated that he is a "raging psychopath, devoid of
+                          the normal human responses to other people's suffering", and whose only ambition in life is
+                          to become all-powerful and immortal.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/slytherin/snape.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Severus Snape</b></h5>
+                          <p class="card-text">Snape is generally depicted as being cold, calculating,
+                            precise, sarcastic, and bitter. He strongly dislikes Harry and often insults him by
+                            insulting his father James. As the series progresses, it is revealed that his treatment of
+                            Harry stems from Snape's bitter rivalry with James when they were in school together.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/slytherin/bellatrix.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Bellatrix Lestrange</b></h5>
+                          <p class="card-text">Bellatrix Lestrange is known for her intense loyalty to, and even
+                            obsession with, her master, Voldemort. Her name, however, has become most closely associated
+                            with her rather distinctive physical appearance and evil, unhinged behavior, particularly as
+                            depicted in the Harry Potter films.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/slytherin/draco.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Draco Malfoy</b></h5>
+                          <p class="card-text">Draco is characterised as a cowardly bully who tricks and hurts people to
+                            get what he wants; nevertheless, he is a cunning user of magic. He was played by Tom Felton
+                            in the Harry Potter film series.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/slytherin/lucius.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Lucius Malfoy</b></h5>
+                          <p class="card-text">Lucius Malfoy was an odious character. He was slimy, sneaky, vain and
+                          cruel - to name a few of his most… charming behaviours. However, one of the most infuriating
+                          things about him was how his personality reinforced the idea that Slytherin is an evil house,
+                          which isn't true.</p>
+                          <br>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/slytherin/narcissa.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Narcissa Malfoy</b></h5>
+                          <p class="card-text">Narcissa was a very proud woman who frequently displayed a haughty and
+                            disdainful attitude, looking down upon others as she believed strongly in the importance of
+                            blood purity and valued her family's wealth.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+             <a style="text-decoration: none;" href="#">
+              <div class="card shadow h-100">
+                <div class="card" style="max-width: 100%; max-height: 100%;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./photos/slytherin/horace.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Horace Slughorn<b></b></h5>
+                        <p class="card-text">An unlikely candidate for a teaching position at Hogwarts, Horace
+                          Slughorn is a strange, hopelessly self-serving professor. Although Slughorn's intentions are
+                          usually good, and his behavior is almost always harmless, he has extreme difficulty seeing
+                          past his own needs and desires.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/slytherin/umbridge.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Dolores Umbridge</b></h5>
+                          <p class="card-text">Even at seventeen, Dolores was judgemental, prejudiced and sadistic,
+                            although her conscientious attitude, her saccharine manner towards her superiors, and the
+                            ruthlessness and stealth with which she took credit for other people's work soon gained her
+                            advancement.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+          </div> <!-- Row END -->
+        </div>
+        <!-- Content END -->
+
+        <!-- Content START -->
+        <div class="tab-pane fade" id="course-pills-tabs-2" role="tabpanel" aria-labelledby="course-pills-tab-2">
+          <div class="row g-4">
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/gryffindor/haryy.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Harry Potter</b></h5>
+                          <p class="card-text">Harry's one of the leading role/main characters.
+                            Harry's defining traits, as they have been throughout the series, are bravery,
+                            determination, and self-sacrifice.
+                            A true Gryffindor, Harry responds to every crisis with courage and resolve.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/gryffindor/dumbledore.jpg" class=" img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Albus Dumbledore</b></h5>
+                          <p class="card-text">Dumbledore has characteristic as wise, gentle, kind, misterious in way,
+                            knowlegable, caring and understanding. Dumbledore is the protector and mentor for Harry
+                            Potter, he give influnces for Harry, his friends and the reader to follow his character.
+                            They be more brave, smart and caring.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/gryffindor/hermoine.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Hermoine Granger</b></h5>
+                          <p class="card-text">She is an overachiever who excels academically and is described by
+                            Rowling as a "very logical, upright and good" character. Rowling adds that Hermione's
+                            parents, two Muggle dentists, are a bit bemused by their odd daughter but "quite proud of
+                            her all the same".</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/gryffindor/ronald.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Ron Weasley</b></h5>
+                          <p class="card-text">Ron may have sometimes been quick to jealousy, insecurity and anger – but
+                            he was also loyal, smart, brave and funny. He cared deeply for those close to him, and would
+                            stick up for his friends and family.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+             <a style="text-decoration: none;" href="#">
+              <div class="card shadow h-100">
+                <div class="card" style="max-width: 100%; max-height: 100%;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./photos/gryffindor/siriusblack.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Sirius Black</b></h5>
+                        <p class="card-text">Personality... brooding, brave, and reckless. Sirius resents being cooped
+                          up in Grimmauld Place, and looks for any excuse to venture outside, even though it could
+                          mean he gets caught and thrown back in Azkaban. He's always been courageous, and is more
+                          than willing to die in order to save his friends.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </a>
+            </div>
+            <!-- Card item END -->
+
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/gryffindor/mcgonagall.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Minerva Mcgonagall</b></h5>
+                          <p class="card-text">Minerva Mcgonagal is stern, loyal, and protective. Though she is an
+                            extremely strict teacher
+                            and has a no-nonsense policy in the classroom, Minerva isn't totally without personality,
+                            and exhibits a dry sense of humor (though rarely).</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/gryffindor/ginny.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Ginny Weasley</b></h5>
+                          <p class="card-text">Ginny is forceful, independent and often speaks her mind. She has an
+                            energetic, lively personality; having feelings for Harry, she became shy and withdrawn in
+                            his presence, during the first few years of their friendship. According to Harry, growing up
+                            with six older brothers toughened her.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a  style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/gryffindor/neville.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Neville Longbottom</b></h5>
+                          <p class="card-text">Initially, Neville seems an odd choice to have been sorted into
+                            Gryffindor, a House mainly known for bravery and nobility. Neville is certainly a noble
+                            character, but his timid, fearful nature, along with his poor magical skills and memory
+                            problems, seem out-of-place with the more assertive Gryffindors.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/gryffindor/hagrid.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Rebeus Hagrid</b></h5>
+                          <p class="card-text">A loyal, friendly, softhearted personality who is easily brought to
+                            tears, he is also known for his thick West Country accent. Hagrid was portrayed by Robbie
+                            Coltrane in all eight Harry Potter films, from Philosopher's Stone in 2001 to Deathly
+                            Hallows - Part 2 in 2011.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/gryffindor/lupin.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Remus Lupin</b></h5>
+                          <p class="card-text">Remus is almost always calm and collected, and is very perceptive of
+                            others' feelings and thoughts. Despite facing prejudice all of his life because of his
+                            condition, his compassion and understanding is unwavering, and he is able to see the good in
+                            everyone.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/gryffindor/george&fred.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>George & Fred</b></h5>
+                          <p class="card-text">They are around two years older than Ron and Harry, and were in
+                            Gryffindor, following in the footsteps of their family. They are tricksters, always
+                            inventing new tricks and playing practical jokes on their schoolmates and teachers. </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+          </div>
+        </div>
+        <!-- Content END -->
+
+        <!-- Content START -->
+        <div class="tab-pane fade" id="course-pills-tabs-3" role="tabpanel" aria-labelledby="course-pills-tab-3">
+          <div class="row g-4">
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/ravenclaw/luna.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Luna Lovegood</b></h5>
+                          <p class="card-text">She was open-minded with a dreamy disposition and a distinct flair for
+                            fashion. As J.K. Rowling herself has said: 'She's slightly out-of-step in many ways, but
+                            she's the anti-Hermione. Hermione's so logical and inflexible in so many ways and Luna is
+                            likely to believe ten impossible things before breakfast. '</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/ravenclaw/cho.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Cho Chang</b></h5>
+                          <p class="card-text">Cho is an intelligent, pure and sweet girl who stays loyal to her friends
+                            even at the hardest times, as shown when Marietta betrayed the D.A. In addition, Cho was
+                            known to suffer from emotional confusion, as Cedric's death hit her greatly, and she was
+                            confused with her relationship with Harry.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/ravenclaw/garrick.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Garrick Ollivander</b></h5>
+                          <p class="card-text">Ollivander was an intelligent man, with a perfect memory when it came to
+                            his work; he remembered the details of every wand he ever sold.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+             <a style="text-decoration: none;" href="#">
+              <div class="card shadow h-100">
+                <div class="card" style="max-width: 100%; max-height: 100%;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./photos/ravenclaw/myrtle.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Moaning Myrtle</b></h5>
+                        <p class="card-text">Myrtle's personality itself was being very sensitive; she hardly ever
+                          smiled and took great offence at the smallest slight. She usually cried when she got sad,
+                          and when she did, she cried very loudly, hence her nickname Moaning Myrtle.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </a>
+            </div>
+            <!-- Card item END -->
+
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/ravenclaw/sybill.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b> Sybill Trelawney</b></h5>
+                          <p class="card-text">Trelawney was extremely eccentric; she had a theatrical presence and
+                            frequently spoke in misty, ethereal tones. She saw herself as being a great Seer, although
+                            her predictions rarely came true.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/ravenclaw/gilderoy.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Gilderoy Lockhart</b></h5>
+                          <p class="card-text">Personality. Gilderoy Lockhart was an immoderately vainglorious,
+                            self-obsessed, egocentric, and narcissistic self-promoter who claimed to have accomplished
+                            multiple heroic deeds. However, in reality, he was nothing but a charlatan who took credit
+                            for other Wizards and Witches' achievements.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+
+          </div>
+        </div>
+        <!-- Content END -->
+
+        <!-- Content START -->
+        <div class="tab-pane fade" id="course-pills-tabs-4" role="tabpanel" aria-labelledby="course-pills-tab-4">
+          <div class="row g-4">
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/hufflepuff/alastor.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Alastor Moody</b></h5>
+                          <p class="card-text">Overview. Alastor "Mad-Eye" Moody is a former Auror. His profession has
+                            apparently been rather hard on him, as he has a wooden leg, a magical artificial eye, and a
+                            large chunk taken out of his nose. He has developed a deep distrust of nearly everyone and
+                            everything.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/hufflepuff/tonks.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Nymphadora Tonks</b></h5>
+                          <p class="card-text">She's funny, feisty, and clumsy. Although she is a powerful, skilled witch,
+                            Tonks is clumsy and often trips over things – she almost failed the Stealth and Tracking
+                            portion of the Auror training. She also has a good sense of humor, and always jokes around
+                            with Harry, Hermione, and the Weasley kids.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/hufflepuff/cedric.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Cedric Diggory</b></h5>
+                          <p class="card-text">He's handsome, brave, loyal, and kind. He believes in fair play. He's the
+                            Seeker for Hufflepuff's Quidditch team. And he's dating Cho Chang, a fifth-year and Harry's
+                            current crush.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+            <!-- Card item START -->
+            <div class="col-sm-12 col-lg-6 col-xl-6">
+              <a style="text-decoration: none;" href="#">
+                <div class="card shadow h-100">
+                  <div class="card" style="max-width: 100%; max-height: 100%;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./photos/hufflepuff/pamona.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Pomona Sprout</b></h5>
+                          <p class="card-text">Professor Sprout was noted to be very cheerful, positive, and loyal, but
+                            was also very professional and just and would chide her students if necessary. Thus, Sprout
+                            possessed all of the virtues and aspects belonging to Hufflepuff House.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Card item END -->
+
+          </div>
+        </div>
+        <!-- Content END -->
+        <!-- Tabs content END -->
+      </div>
+    </section>
+      </main>
+
+<!-- footer -->
+<footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item "><a href="./index.html" class="nav-link px-2 footer-text">Home</a></li>
+      <li class="nav-item"><a href="./magic.html" class="nav-link px-2 footer-text">Magic</a></li>
+      <li class="nav-item"><a href="./wizardwitch.html" class="nav-link px-2 footer-text ">WnW</a></li>
+      <li class="nav-item"><a href="./patronus.html" class="nav-link px-2 footer-text">Patronus</a></li>
+    </ul>
+    <p class="text-center footer-text">© 2023 Harry Potter, Inc</p>
+  </footer>
+
+<!-- Bootstrap script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+crossorigin="anonymous"></script>
+</body>
+</html>
